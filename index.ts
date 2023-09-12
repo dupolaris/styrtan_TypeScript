@@ -200,8 +200,191 @@ for(let lang of languages){
     // I want to learn: Gesture Language
 
 //Q21:
+const shoppingProducts = {
+    products: 
+    [
+        {
+            name: "iPhone 15 Pro",
+            id: 1,
+            price: 990,
+            description: "Coming Soon"
+        },
+        {
+            name: "Samsung S23",
+            id: 2,
+            price: 850,
+            description: "Coming Soon" 
+        }
+    ],
+};
+
+//Q22:
+console.log(dinnerGuests[3]);  //as 3rd index doesn't exists
+    //OUTPUT:  undefined
+
+//Q23:
+let car: string = "subaru";
+let bike: string = "yamaha";
+
+if ( car == "subaru")
+    console.log("true the string matched");
+else console.log("string didnot match");
+
+if (bike == "mt07") console.log("true the string matched");
+else console.log("string didnot match");
+
+//Q24:
+// Tests for equality and inequality with strings
+const string1 = "hello";
+const string2 = "world";
 
 
+// Tests using the lower case function
+const lowerCaseString1 = string1.toLowerCase();
+const lowerCaseString2 = string2.toLowerCase();
+
+console.log(lowerCaseString1 === lowerCaseString2); // true
+
+// Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+const number1 = 10;
+const number2 = 20;
+
+console.log(number1 > number2);
+console.log(number1 < number2); 
+console.log(number1 >= number2);
+console.log(number1 <= number2);
+
+// Tests using "and" and "or" operators
+const condition1 = number1 === 10;
+const condition2 = number2 === 20;
+
+console.log(condition1 && condition2); 
+console.log(condition1 || condition2);
+
+// Test whether an item is in a array
+const arrayIn = ["hello", "world"];
+
+console.log("hello" in arrayIn);
+console.log("world" in arrayIn); 
+console.log("goodbye" in arrayIn); 
+
+// Test whether an item is not in a array
+console.log("goodbye" in arrayIn); 
+
+//Q25:
+// Alien Colors #1
+var alienColor = "green";
+
+if (alienColor === "green") {
+  console.log("Player earned 5 points for shooting the green alien.");
+}
+
+//Q26:
+// Alien Colors #2
+var alienColor = "yellow";
+
+if (alienColor === "green") {
+  console.log("Player earned 5 points for shooting the green alien.");
+} else {
+  console.log("Player earned 10 points for shooting the yellow alien.");
+}
+//Q27:
+// Alien Colors #3
+var alienColor = "red";
+
+if (alienColor === "green") {
+  console.log("Player earned 5 points for shooting the green alien.");
+} else if (alienColor === "yellow") {
+  console.log("Player earned 10 points for shooting the yellow alien.");
+} else {
+  console.log("Player earned 15 points for shooting the red alien.");
+}
+
+//Q28:
+const age = 2;
+
+if (age < 2) {
+  console.log("The person is a baby.");
+} else if (age >= 2 && age < 4) {
+  console.log("The person is a toddler.");
+} else if (age >= 4 && age < 13) {
+  console.log("The person is a kid.");
+} else if (age >= 13 && age < 20) {
+  console.log("The person is a teenager.");
+} else if (age >= 20 && age < 65) {
+  console.log("The person is an adult.");
+} else {
+  console.log("The person is an elder.");
+}
+
+//Q29:
+const favFruits: Array<string> = ["banana", "mango", "strawberry"];     //generic array type declaration
+if ("banana" in favFruits) console.log("I like bananas.\n");
+else if ("strawberry" in favFruits) console.log("I like strawberry\n");
+else if ("watermelon" in favFruits) console.log("I like watermelon");
+else if ("mango" in favFruits) console.log("I like mangos");
+else if ("melon" in favFruits) console.log("I like melon");
+
+//Q30:
+const greetArray: string[] = ["Eric", "Sam", "Admin", "Sailor", "Raymond"];
+for(let i = 0; i <= greetArray.length; i++ ){
+    if ("Admin" == greetArray[i]){
+        console.log(`Hello ${greetArray[i]}, would you like to see status report?\n`);
+    }
+    else { console.log(`Hello ${greetArray[i]}, Thank You for logging again.`); }
+}
+
+//Q31:
+if (greetArray.length == 0) console.log("We need to find some users\n");
+
+else {
+    greetArray.length = 0;
+    console.log("We need to find some User.");
+}
+
+//Q32:
+const currentUsers: string[] = ["johndoe", "janedoe", "peter", "mary", "admin"];
+const newUsers: string[] = ["johndoe", "JOHNDOE", "peter", "mary", "newuser"];
+
+for (const newUser of newUsers) {
+  const isUsernameAvailable = currentUsers.findIndex((currentUser) => currentUser.toLowerCase() === newUser.toLowerCase()) === -1;
+
+  if (!isUsernameAvailable) {
+    console.log(`The username ${newUser} is not available.`);
+  } else {
+    console.log(`The username ${newUser} is available.`);
+  }
+}
+
+//Q33:
+const ordinalNo: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for ( let i = 0; i <= ordinalNo.length; i++ ){
+
+    if (ordinalNo[i] == 1) console.log(ordinalNo[i] + "st\n");
+    else if (ordinalNo[i] == 2) console.log(ordinalNo[i] + "nd\n");
+    else if (ordinalNo[i] == 3) console.log(ordinalNo[i] + "rd\n");
+    else if (ordinalNo[i] >= 4) console.log(ordinalNo[i] + "th\n");
+}
+
+//Q34:
+const favoritePizzas = ["pepperoni", "cheese", "sausage"];
+
+for (const pizza of favoritePizzas) {
+  console.log(`I like ${pizza} pizza.`);
+}
+
+console.log(`I really love pizza!`);
+
+//Q35:
+const animals = ["dog", "cat", "fish"];
+
+for (const animal of animals) {
+  console.log(`A ${animal} would make a great pet!`);
+}
+
+console.log(`Any of these animals would make a great pet!`);
+
+//Q36:
 
 
 
