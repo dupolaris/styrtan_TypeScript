@@ -1,10 +1,7 @@
-
-/*//Q1: setup environment
+//Q1: setup environment
 //Q2: 
 var personName = 'Dawood';
 console.log("\nHello" + " " + personName + ", " + "would you like to learn some python today?\n");
-
-    //OUTPUT: Hello Dawood Muhammad, would you like to learn some python today?
 
 //Q3:
 personName = personName.toLowerCase();
@@ -12,32 +9,21 @@ console.log("\nlowercase name: " + personName);
 
 personName = personName.toUpperCase();
 console.log("\nuppercase name: " + personName);
-//...
+
 personName = personName.charAt(0).toUpperCase() + personName[0].slice(1);
 console.log("\ntitlecase name: " + personName); 
-
-    //OUTPUT: lowercase name: dawood
-    //OUTPUT: uppercase name: DAWOOD
-    //OUTPUT: 
-
 
 //Q4:
 var quote = "\nAlbert Einstein once said, \"A person who never made a mistake never tried anything new.\"\n";
 console.log(quote);
-
-    //OUTPUT: Albert Einstein once said, "A person who never made a mistake never tried anything new."
 
 //Q5:
 var famous_person = "Albert Einstein";
 var quoteMessage = famous_person + " once said,\" A person who never made a mistake never tried anything new.\"\n";
 console.log(quoteMessage);
 
-    //OUTPUT: Albert Einstein once said, "A person who never made a mistake never tried anything new."
-
 //Q6:
 console.log("\tDawood\nDawood");
-    //OUTPUT:         Dawood
-    //OUTPUT: Dawood
 
 //Q7 - Q8:
 console.log(2+6);
@@ -45,20 +31,9 @@ console.log(10-2);
 console.log(2*4);
 console.log(64/8);
 
-    //OUTPUT: 8
-    //OUTPUT: 8
-    //OUTPUT: 8
-    //OUTPUT: 8
-
 //Q9:
 var favNum = 8;
 console.log("My favourite number is: " + favNum + " and it\'s an even number.");
-    //OUTPUT: My favourite number is: 8 and it's an even number.
-
-//Q10:
-// this is a single line comment
-/* this is a 
-    multiline comment*/
 
 //Q11:
 const array: string[] = ["dawood" , "suleman", "ahmad"];
@@ -66,25 +41,14 @@ console.log(array[0]);
 console.log(array[1]);
 console.log(array[2]);
 
-    //OUTPUT: dawood
-    //OUTPUT: suleman
-    //OUTPUT: ahmad
-
 //Q12:
 console.log(array[0] + " is me.");
 console.log(array[1] + " is my brother.");
 console.log(array[2] + " is our friend.");
 
-    //OUTPUT: dawood is me.
-    //OUTPUT: suleman is my brother.
-    //OUTPUT: ahmad is our friend.
-
 //Q13: 
 const vehicles: string [] = ["Yamaha MT 07", "Corvete c8"];
 console.log("\nI would love to own " + vehicles[0] + ", \nand " + "my favourite car that is " + vehicles[1] + " :)");
-    //OUTPUT:
-    // I would love to own Yamaha MT 07,
-    // and my favourite car that is Corvete c8 :)
 
 //Q14:
 const dinnerGuests: string [] = ["Ahmad", "Suleman", "Omer"];
@@ -94,10 +58,6 @@ console.log("\nI would like to invite my friends: " + dinnerGuests[0] + ", " + d
 console.log("\nJust came to know that " + dinnerGuests[0] + " cannot attend the dinner.\n");
 dinnerGuests[0] = "Asad";
 console.log("\nAm inviting " + dinnerGuests[0] + " to the dinner at my home, along with " + dinnerGuests[1] + " and " + dinnerGuests[2] + ".");
-    //OUTPUT Q14 - 15:
-    // I would like to invite my friends: Ahmad, Suleman and Omer to a dinner at my home.
-    // Just came to know that Ahmad cannot attend the dinner.
-    // Am inviting Asad to the dinner at my home, along with Suleman and Omer.
 
 //Q16:
 dinnerGuests.unshift("Hunzla");
@@ -105,16 +65,6 @@ dinnerGuests.push("Hamad");
 dinnerGuests.splice(2, 0, "Subhan", "Arfa");
 console.log("\nI have found a bigger dinning table so am inviting other friends as follow:\n");
 console.log(dinnerGuests[0] + "\n" + dinnerGuests[1] + "\n" + dinnerGuests[2] + "\n" + dinnerGuests[3] + "\n" + dinnerGuests[4] + "\n" + dinnerGuests[5] + "\n" + dinnerGuests[6] + ".");
-    //OUTPUT:
-    // I have found a bigger dinning table so am inviting other friends as follow:
-
-    // Hunzla
-    // Asad
-    // Subhan
-    // Arfa
-    // Suleman
-    // Omer
-    // Hamad.
 
 //Q17:
 console.log("\nAs my dinner table is late so,\n");
@@ -137,16 +87,6 @@ dinnerGuests.shift();
 dinnerGuests.shift();
 console.log("\nreturning empty array of guests:  ");
 console.log(dinnerGuests);
-    //OUTPUT:
-    // As my dinner table is late so,
-    // Sorry, Hunzla I cannot invite you to dinner.
-    // Sorry, Asad I cannot invite you to dinner.
-    // Sorry, Hamad I cannot invite you to dinner.
-    // Sorry, Omer I cannot invite you to dinner.
-    // Sorry, Suleman I cannot invite you to dinner.
-    // Now only Subhan and Arfa are invited.
-    // returning empty array of guests:
-    // []
 
 //Q18:
 const placesToVisit: string[] = ["London", "Grand Canyon", "Sydney", "Rome", "Tokyo"];
@@ -172,32 +112,15 @@ console.log("Original order of Array (copy): " + placesToVisitCopy);
 
 placesToVisit.sort();
 console.log("Original Array in alphabetical order: " + placesToVisit);
-    //OUTPUT:
-    // Places to visit Array in original form: London,Grand Canyon,Sydney,Rome,Tokyo
-    // Array in alphabetical order: Grand Canyon,London,Rome,Sydney,Tokyo
-    // Array in its original form: London,Grand Canyon,Sydney,Rome,Tokyo
-    // Array in reverse order: Tokyo,Sydney,Rome,London,Grand Canyon
-    // Array in its original form: London,Grand Canyon,Sydney,Rome,Tokyo
-    // Original array in reverse: Tokyo,Sydney,Rome,London,Grand Canyon
-    // Original order of Array (copy): London,Grand Canyon,Sydney,Rome,Tokyo
-    // Original Array in alphabetical order: Grand Canyon,London,Rome,Sydney,Tokyo
 
 //Q19:
 console.log("\nTotal guests at dinner are: " + totalDinnerGuests);
-    //OUTPUT:
-    // Total guests at dinner are: 2
     
 //Q20:
 const languages: string[] = ["Urdu", "Saraiki", "English", "Arabic", "Gesture Language"];
 for(let lang of languages){
     console.log("\nI want to learn: " + lang);
 }
-    //OUTPUT:
-    // I want to learn: Urdu
-    // I want to learn: Saraiki
-    // I want to learn: English
-    // I want to learn: Arabic
-    // I want to learn: Gesture Language
 
 //Q21:
 const shoppingProducts = {
@@ -385,80 +308,105 @@ for (const animal of animals) {
 console.log(`Any of these animals would make a great pet!`);
 
 //Q36:
+function make_shirt(tMessage: string , size: string){
+  console.log(tMessage + "\tSize: " + size + "\n");
+}
+make_shirt('My T-Shirt' , 'XL');
 
-
-
-
-
-
-
-
-
-
-
-
-// let inviteArray = ["Dawood" , "Suleman" , "Ahmad" , "Umer"];
-// console.log(inviteArray.length);
-
-// let notinvited = inviteArray.shift();
-// console.log(notinvited);
-
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// const newFruitsArray = fruits.sort();
-// console.log(fruits);
-// console.log(newFruitsArray);
-
-// const arr = ["home", "alpha", "banana"];
-// const arrSorted = arr.sort();
-// console.log(arr); //[2, 1, 3]
-// console.log(arrSorted); //[1, 2, 3]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-class Employee {
-    name: string;
-    id: number;
-    address: string;
-
-    constructor(name: string, id: number, address: string){
-        this.name = name;
-        this.id = id;
-        this.address = address;
-    }
-
-    getNameWithAddress(){
-
-        console.log(`${this.name} lives in ${this.address}`);
-    }
+const tSizeArray: string[] = ["S", "M", "L", "XL", "Custom"];
+const tMessageArray: string[] = ["I love TypeScript ", "I love C++", "I love Apex", "I love Python", "I love Games"];
+//Q37:
+for (let i = 0; i< tSizeArray.length; i++){
+  make_shirt( tMessageArray[i] , tSizeArray[i])
 }
 
-let Einfo = new Employee("Dawood", 608 , "Islamabad");
+//Q38:
+function describe_city(city: string , country: string = 'Pakistan'){
+  console.log(`${city} is in ${country} \n`)
+}
 
-console.log(Einfo);
-Einfo.getNameWithAddress();
-*/
+describe_city('Islamabad');
+describe_city('Lahore');
+describe_city('San Francisco' , 'USA');
+
+//Q39:
+function city_Country(city: string , country: string) : string {
+  return `${city} , ${country}`;
+}
+
+//2D array has same number of columns but a jagged array has different number of columns
+const cityCountryPair: string [][] = [
+  ["Islamabad" , "Pakistan"],
+  ["London" , "England"],
+  ["Tokyo" , "Japan"]
+]
+
+for(const [city , country] of cityCountryPair){
+  console.log(city_Country( city , country ));
+}
+
+//Q40:
+let trackCount: number = 0;
+const make_Album = function(artist: string , title: string , trackNo: number = trackCount ): Record<string , unknown> {
+  return {
+    artist,
+    title,
+    trackNo,
+  };
+}
+
+const album1 = make_Album("Atif Aslam" , "Aadat" );
+const album2 = make_Album("Adele" , "Hello" , ++trackCount);
+const album3 = make_Album("NFAK" , "Sadgi to hamari zra dekhye" , ++trackCount);
+
+console.log(album1);
+console.log(album2);
+console.log(album3);
+
+//Q41:
+const magicianArray: string[] = ["Roger Lapin" , "David Copperfield" , "Paul Daniels" , "David Blaine" , "Derren Brown"];
+
+function showMagicians(mNames: string[]){
+  console.log(mNames);
+}
+
+showMagicians(magicianArray);
+
+//Q42:
+  const greatMagicianArray = magicianArray.map((names) => {
+    return `The Great ${names}`
+  });
+
+showMagicians(greatMagicianArray);
+
+//Q43:
+showMagicians(magicianArray);
+showMagicians(greatMagicianArray);
+
+//Q44:
+function make_Sandwich(...itemsOfSandwich: string[]){
+  console.log("Your Sandwich has following items:\n");
+  for(const item of itemsOfSandwich){
+    console.log(`# ${item}`);
+  }
+}
+
+make_Sandwich("Wheat Bread" , "Olives" , "Tandori Chicken" , "Corn" , "Sauces");
+make_Sandwich("Brown Bread" , "Chicken" , "Corn" , "Sauces");
+make_Sandwich("Plain Bread" , "Lettuce" , "Patty");
+
+//Q45:
+function make_Car(manufacturer: string , model: string , ...options: [string , any][]) {
+  const car: any = {
+    manufacturer,
+    model
+  };
+
+  for(const [key , value] of options){
+    car[key] = value;
+  }
+  return car;
+}
+
+const car1 = make_Car("Chevrolet" , "Corvette C8" , ["Color" , "Yellow"] , ["TopSpeed" , "194mph"]);
+console.log(car1);
